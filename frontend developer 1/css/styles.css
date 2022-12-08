@@ -1,0 +1,622 @@
+:root{
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo{
+    width: 180px;
+    margin-bottom: 50px;
+    justify-self: center;
+}
+
+.title{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+/* Estilos para el logeo del usuario */
+.input-email{
+    margin-bottom: 22px;
+}
+
+.secondary-button{
+    background-color: var(--text-input-field);
+    color: var(--hospital-green);
+    border-radius: 8px;
+    border: 2px solid var(--hospital-green);
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    margin-top: 48px;
+}
+
+.hyper{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+/* Estilos para la pagina de cambio de contraseña */
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    /* width: 100%; */
+    height: 20px;
+    font-size: var(--md);
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.primary-button{
+    background-color: var(--hospital-green);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    /* margin-top: 24px;
+    align-self: center; */
+}
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 32px;
+    align-self: center;
+}
+
+/* estilos para la pagina de el correo enviado */
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
+
+.resend{
+    font-size: var(--sm);
+}
+
+.resend span{
+    color: var(--very-light-pink);    
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+/* Estilos para la pagina crear el usuario */
+.title2{
+    font-size: var(--lg);
+    text-align: left;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
+.form div{ /*Este sirve tambien para la pagina del logeo para bajar el boton*/
+    display: flex;
+    flex-direction: column;
+}
+
+.create-button{
+    margin-top: 24px;
+}
+
+/* Estilos para la pagina editar el usuario */
+.edit-button{
+    background-color: var(--text-input-field);
+    color: var(--hospital-green); 
+    border: var(--hospital-green) solid 2px;
+}
+
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+/* Estilos para la pagina de inicio */
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 24px;
+    place-content: center;
+}
+
+.product-card{
+    width: 240px;
+}
+.product-card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-info figure{
+    margin: 0;
+}
+.product-info figure img{
+    width: 32px;
+    height: 32px;
+}
+
+.precio{
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.producto{
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
+/* Estilos para la barra de menu de la aplicación en pc*/
+.desktop-menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+.desktop-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.desktop-menu ul li{
+    text-align: end;
+    font-weight: bold;
+}
+
+.li-signout{
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.li-signout .menu-signout{
+    color: var(--hospital-green);
+}
+
+.desktop-menu ul li a{
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Estilos del menu visual para la parte del mobil */
+.mobile-menu{
+    padding: 24px;
+}
+
+.mobile-menu ul{
+    padding: 0;
+    margin: 40px 0 0 0;
+    list-style: none;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu li{
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.mobile-menu a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.email-name{
+    color: darkgray;
+    font-size: var(--sm);
+}
+
+.sign-out{
+    color: #ACD9B2 !important;
+}
+
+/* Estilos para la pagina de my order */
+.my-order{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.my-order-container h1{
+    margin-bottom: 56px;
+}
+
+.my-order-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.order{
+    background-color: rgb(223, 223, 223);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.order p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+.order p span:nth-child(1){
+    font-weight: bold;
+}
+.order p span:nth-child(2){
+    color: rgb(161, 159, 159)
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.shopping-cart figure{
+    margin: 0;
+    }
+
+.shopping-cart figure img{
+width: 70px;
+height: 70px;
+border-radius: 20px;
+object-fit: cover;
+}
+
+.shopping-cart p:nth-child(2){
+    color: var(--very-light-pink);
+}
+
+.shopping-cart p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+/* Estilos para la pagina mis pedidos */
+.pedidos{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.pedidos p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.pedidos p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+.pedidos p span:nth-child(1){
+    font-weight: bold;
+}
+.pedidos p span:nth-child(2){
+    color: rgb(161, 159, 159)
+}
+
+/* Estilos para el navbar */
+.menu-barra{
+    display: none;
+}
+
+.logo-menu{
+    width: 100px;
+}
+
+.navbar-left ul, 
+.navbar-right ul{
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-left ul li a, 
+.navbar-right ul li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navbar-left ul li a:hover, 
+.navbar-right ul li a:hover{
+    /* background-color: rgb(196, 191, 191); */
+    color: var(--hospital-green);
+    border:1px solid var(--hospital-green);
+   
+}
+
+.navbar-left{
+    display: flex;
+}
+.navbar-left ul {
+    margin-left: 20px;
+}
+.navbar-left ul li a{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.navbar-email{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.navbar-shopping-cart{
+    position: relative;
+}
+.navbar-shopping-cart div{
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Estilos para la pagina de los detalles del producto */
+.product-detail{
+    width: 360px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    /* margin: 12px 12px 12px 12px; */
+}
+
+.product-detail > img:nth-child(2){
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: -8px;
+}
+
+.product-detail-close{
+    background: rgb(255, 255, 255);
+    width: 14px;
+    height: 14px;
+    position: absolute; 
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.product-detail-close:hover{
+    cursor: pointer;
+}
+
+.add-cart-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    margin:24px 24px 0 24px;
+}
+
+.product-info p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.product-info p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.product-info p:nth-child(3){
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Estilos de la pagina produsts */
+
+.shopping-cart-products{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.shopping-cart-products figure{
+    margin: 0;
+    }
+
+.shopping-cart-products figure img{
+width: 70px;
+height: 70px;
+border-radius: 20px;
+object-fit: cover;
+}
+
+.shopping-cart-products p:nth-child(2){
+    color: var(--very-light-pink);
+}
+
+.shopping-cart-products p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.title-container{
+    display: flex;   
+}
+.title-container img{
+    transform: rotate(180deg);   
+    margin-right: 16px;
+}
+
+/* Cambios que se aplican para tamaños de pantalla pequeñas (celulares)*/
+@media (max-width: 640px) {
+    .form-container{
+        height: 100%;
+    }
+    .form{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .signup-button{
+        margin-bottom: 24px;
+    }
+    .logo{
+        margin-top: 52px;
+    }
+    .create-button{
+        margin-bottom: 24px;
+    }
+    .edit-button{
+        margin-bottom: 24px;
+    }
+    .cards-container{
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .product-card{
+        width: 140px;
+    }
+    .product-card img{
+        width: 140px;
+        height: 140px;
+    }    
+    .menu-barra{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-right ul .navbar-email{
+        display: none;
+    }
+    .product-detail{
+        width: 100%;
+    }
+}
